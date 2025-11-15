@@ -1,0 +1,32 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Box styling */
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 50px auto;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+/* Animated class to apply transformations */
+.animate {
+    transform: rotate(360deg) scale(1.5);
+    background-color: lightblue;
+}
+
+/* Optional: keyframe animation for continuous effect */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 1s infinite;
+}
